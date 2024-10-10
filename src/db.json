@@ -1,0 +1,63 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "A Day in the Park",
+      "content": "Today, I went to the park and had a wonderful time. The weather was perfect and I enjoyed a relaxing afternoon.",
+      "visible": true
+    },
+    {
+      "id": "2",
+      "title": "Grocery Shopping",
+      "content": "Went grocery shopping today. Bought some fresh vegetables, fruits, and a few snacks.",
+      "visible": false
+    },
+    {
+      "id": "3",
+      "title": "Workout Session",
+      "content": "Had an intense workout session at the gym. Feeling really good and energetic now.",
+      "visible": true
+    },
+    {
+      "id": "4",
+      "title": "Movie Night",
+      "content": "Watched an amazing movie tonight. It was a thriller and kept me on the edge of my seat!",
+      "visible": true
+    },
+    {
+      "id": "5",
+      "title": "Reading a Book",
+      "content": "Started reading a new book today. It's a mystery novel and so far it's really captivating.",
+      "visible": true
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin"
+    }
+  ],
+  "register": [
+    {
+      "id": "c90c",
+      "username": "ab",
+      "password": "bc"
+    },
+    {
+      "id": "0981",
+      "username": "aaaa",
+      "password": "bbbb"
+    },
+    {
+      "id": "b374",
+      "username": "ab",
+      "password": "23032003"
+    },
+    {
+      "id": "0b10",
+      "username": "duythanh",
+      "password": "123456"
+    }
+  ]
+}

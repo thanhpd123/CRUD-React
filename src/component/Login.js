@@ -11,7 +11,7 @@ const Login = () => {
   const [register, setRegister] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/register')
+    axios.get('/api/data?type=register')
       .then(response => {
         setRegister(response.data);
       })

@@ -1,6 +1,6 @@
 {
     "functions": {
-        "src/api/*.js": {
+        "api/*.js": {
             "memory": 1024,
             "maxDuration": 10
         }
@@ -8,7 +8,7 @@
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "/src/api/$1"
+            "dest": "/api/$1"
         }
     ]
 }

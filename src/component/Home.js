@@ -11,13 +11,13 @@ const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:3000/posts")
+    axios.get('/api/get-data?type=posts')
       .then((response) => setPosts(response.data))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:3000/posts/${id}`)
+    axios.delete(`/api/get-data?type=posts/${id}`)
       .then((response) => {
         if (response.status === 200) {
           setPosts(posts.filter((post) => post.id !== id));
@@ -38,7 +38,7 @@ const Home = () => {
       alert("trung id");
       return;
     }
-    axios.post("http://localhost:3000/posts", newPost)
+    axios.post("/api/get-data?type=posts", newPost)
       .then((response) => {
         setPosts([...posts, response.data]);
         setNewPost({ id: "", title: "", content: "", visible: true });
@@ -48,7 +48,7 @@ const Home = () => {
 
   const handleUpdate = (event) => {
     event.preventDefault();
-    axios.put(`http://localhost:3000/posts/${updatePost.id}`, updatePost)
+    axios.put(`/api/get-data?type=posts/${updatePost.id}`, updatePost)
       .then((response) => {
         setPosts(posts.map((post) =>
           post.id === updatePost.id ? response.data : post
@@ -62,7 +62,7 @@ const Home = () => {
     const postToToggle = posts.find((post) => post.id === id);
     postToToggle.visible = !postToToggle.visible;
 
-    axios.put(`http://localhost:3000/posts/${id}`, postToToggle)
+    axios.put(`/api/get-data?type=posts/${id}`, postToToggle)
       .then((response) => {
         setPosts(posts.map((post) =>
           post.id === id ? response.data : post

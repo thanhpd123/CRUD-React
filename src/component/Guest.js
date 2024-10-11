@@ -7,7 +7,7 @@ const Guest = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/posts")
+    axios.get('/api/get-data?type=posts')
       .then((response) => setPosts(response.data.filter(post => post.visible)))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
